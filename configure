@@ -4400,10 +4400,10 @@ done
 if test -n "$GXX"; then
   # -fno-strict-aliasing disables strict-aliasing optimizations that assume
   # that pointers of different types never point to the same object.
-  CXXFLAGS="$CXXFLAGS -Wall -fno-strict-aliasing"
+  CXXFLAGS="$CXXFLAGS -Wall -Wextra -fno-strict-aliasing"
 fi
 
-CFLAGS="$CFLAGS -Wall"
+CFLAGS="$CFLAGS -Wall -Wextra"
 
 # Remember that all following tests will run with this CXXFLAGS by default
 { $as_echo "$as_me:${as_lineno-$LINENO}: checking for __func__" >&5
